@@ -1,0 +1,30 @@
+#include<iostream>
+#include<cmath>
+#include<string>
+using namespace std;
+
+int main() {
+	string a, b;
+	cout << "B la bua, K la keo ,L la la";
+	cout << "nhap nguoi choi dau : "; cin >> a;
+	cout << "nhap nguoi choi thu 2"; cin >> b;
+	if (a == "K" && b == "K" || a == "B" && b == "B" || a == "L" && b == "L") {
+		cout << "hoa";
+	}
+	if (a == "B" && b == "L")
+		cout << "b thang";
+
+	if (b == "B" && a == "L")
+		cout << "a thang ";
+
+	if (b == "K" && a == "L")
+		cout << "b thang";
+	if (a == "K" && b == "L")
+		cout << "a thang";
+	if (a == "B" && b == "K")
+		cout << "a thang";
+	if (b == "B" && a == "K")
+		cout << "b thang";
+
+
+}
